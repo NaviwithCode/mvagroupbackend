@@ -130,7 +130,7 @@ export const forgotController = async (req, res) => {
         from: "nabiullahansari4321@gmail.com",
         to: email,
         subject: `Password Reset Request`,
-        text: `Click on this link to reset your password: https://demo.daralwudouhopticals.com/reset_password/${isUser._id}/${token}`,
+        text: `Click on this link to reset your password: http://localhost:3000/reset_password/${isUser._id}/${token}`,
       };
       transport.sendMail(mailOptions, (err, info) => {
         if (err) {
